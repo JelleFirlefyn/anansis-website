@@ -1,4 +1,4 @@
-$to = "info@anansis.be"; 
+$to = "info@anansis.eu"; 
 $subject = "Contactformulier ingevuld door $name"; 
 $message = "Naam: $name\n";
 $message .= "E-mail: $email\n";
