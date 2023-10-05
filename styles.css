@@ -1,0 +1,224 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Define basic styles */
+body {
+    font-family: Arial, sans-serif;
+    
+}
+
+header {
+    background-color: #1a1a1a; /* Donkergrijs */
+    color: white;
+    padding: 10px 0;
+    height: 10vh;
+}
+
+
+nav {
+    padding-top: 4vh;
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.menu a:hover {
+    color: #3498db; /* Blauw */
+    border-bottom: 2px solid #3498db; /* Onderlijnen in blauw */
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    background-color: #333; /* Donkergrijs */
+    color: white;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e74c3c; /* Rood */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+main {
+    /*background-color: #3498db;*/
+    background-image: url('background.jpg'); 
+    background-size:100rem;
+    background-repeat:no-repeat ;
+    /*background-attachment:fixed;*/
+    background-position: center 10%;
+    background-color: #3498db;
+}
+.anansis, .pricing, .contact {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 0;
+    color: #333; /* Donkergrijs */
+}
+
+.anansis p {
+    margin: 0; /* Verwijder standaard marges om consistentie te behouden */
+    text-align: left; /* Uitlijnen van tekst naar links (standaard) */
+    line-height: 1.5; /* Aanbevolen regelafstand voor leesbaarheid */
+    margin-top: 2vh;
+    
+}
+
+.anansis h2,
+.anansis p {
+    color: white;
+}
+
+.grid1 h3,
+.grid1 p {
+
+    color: black;
+}
+
+
+
+
+.grid1 {
+    margin-top: 2vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Twee kolommen */
+    grid-template-rows: repeat(3, auto); /* Drie rijen met automatische hoogte */
+    gap: 20px; /* Ruimte tussen grid-items */
+}
+
+.grid-item {
+    padding: 20px; /* Voeg wat ruimte toe rond elk grid-item */
+    border: 1px solid #ccc; /* Voeg een rand toe aan elk grid-item (optioneel) */
+    border-radius: 20px;
+    background-color: lightslategray;
+
+}
+
+
+.grid-item:nth-child(2) {
+    background-image: url('image1.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+
+.grid-item:nth-child(3) {
+    background-image: url('image3.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    
+}
+
+
+/* Media Queries for Responsive Design */
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #1a1a1a; /* Donkergrijs */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+}
+
+
+.contact-form {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 0;
+    color: #333; /* Donkergrijs */
+    text-align: left; /* Uitlijnen van tekst naar links */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333; /* Donkergrijs */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.form-group textarea {
+    resize: vertical; /* Maak de textarea verticaal schaalbaar */
+}
+
+/* Geef de knop dezelfde stijlen als de CTA-knop op de homepagina */
+.contact-form button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e74c3c; /* Rood */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #c0392b; /* Donkerder rood */
+}
+
