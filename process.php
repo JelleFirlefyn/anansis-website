@@ -13,5 +13,5 @@ if ($mailSent) {
     exit();
 } else {
     // Er is een fout opgetreden bij het verzenden van de e-mail, geef een foutmelding weer
-    echo "Er is een fout opgetreden bij het verzenden van de e-mail. Probeer het later opnieuw.";
+    echo "An error occurred while sending the email. Please try again later.";
 }
