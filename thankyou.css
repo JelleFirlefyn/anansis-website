@@ -1,0 +1,37 @@
+
+
+.contact-form {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 0;
+    color: #333; /* Donkergrijs */
+    text-align: left; /* Uitlijnen van tekst naar links */
+    background-color: white; /* Set background color for the form section */
+}
+
+.contact-form h2 {
+    color: #333; /* Donkergrijs */
+}
+
+.contact-form p {
+    color: #333; /* Donkergrijs */
+    margin-top: 20px; /* Add some spacing between the message and the button */
+}
+
+.contact-form .cta-button {
+    background-color: #e74c3c; /* Rood */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.contact-form .cta-button:hover {
+    background-color: #c0392b; /* Donkerder rood */
+}
